@@ -59,7 +59,7 @@ def read_table(table_name):
     
 def get_mapping_table(concept_name):
     
-    mapping_table = pd.read_csv(Path("mappings/" + concept_name + "_mapped.csv"))
+    mapping_table = pd.read_csv(Path("mappings/" + concept_name + ".csv"))
     mapping_dict = dict(zip(mapping_table['sourceCode'], mapping_table['conceptId']))
 
 
