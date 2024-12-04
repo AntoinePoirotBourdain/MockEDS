@@ -1,0 +1,4 @@
+﻿sourceCode,sourceName,sourceFrequency,sourceAutoAssignedConceptIds,matchScore,mappingStatus,equivalence,statusSetBy,statusSetOn,conceptId,conceptName,domainId,mappingType,comment,createdBy,createdOn,assignedReviewer
+F,Female,-1,,1.00,APPROVED,EQUAL,Antoine,1733272719209,8532,FEMALE,Gender,MAPS_TO,,<auto>,1733272706783,
+M,Male ,-1,,0.95,APPROVED,EQUAL,Antoine,1733272719680,8507,MALE,Gender,MAPS_TO,,<auto>,1733272706783,
+
