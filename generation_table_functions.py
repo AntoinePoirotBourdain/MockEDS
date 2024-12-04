@@ -27,6 +27,9 @@ def generate_persons_table():
 
     return person_table
 
+# Tables to generate : 
+# 
+
 
 ######################## Source code ####################################################################
 

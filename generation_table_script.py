@@ -6,6 +6,7 @@ from generation_table_functions import generate_table
 
 generate_table("persons")
 
+
 table_name_list = [
     "persons"
     ]

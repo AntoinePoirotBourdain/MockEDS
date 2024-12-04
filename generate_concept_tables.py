@@ -15,10 +15,32 @@ for concept in default_mapping_table["concept_target"].unique():
     concept_list.append(concept)
 
 
-domain_list = 
+#domain_list = 
 
 
 print(concept_list)
+
+
+
+
+def generate_concept_table():
+
+    concept_table = pd.DataFrame({
+        "concept_id":concept_id_list,
+        "concept_name":None,
+        "domain_id":None,
+        "vocabulary_id":None,
+        "concept_class_id":None,
+        "standard_concept":None,
+        "concept_code":None,
+        "valid_start_date":None,
+        "valid_end_date":None,
+        "invalid_reason":None
+    })
+
+
+
+
 
 # Domain table
 

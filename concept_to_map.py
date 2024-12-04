@@ -2,6 +2,7 @@ import pandas as pd
 from pathlib import Path
 
 
+
 def source_concepts_generation(concept_target,source_table_name, concept_source_code, concept_source_name,reference_table_name=None ):
 
     source_table = pd.read_csv(Path("MIMIC_data/" + source_table_name + ".csv"))
@@ -26,3 +27,6 @@ def source_concepts_generation(concept_target,source_table_name, concept_source_
 
 source_concepts_generation("diagnoses","DIAGNOSES_ICD","icd9_code","long_title", "D_ICD_DIAGNOSES")
 
+
+
+    
