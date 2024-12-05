@@ -1,0 +1,38 @@
+# Person
+
+- [x] gender_concept_id
+- [x] race_concept_id
+- [x] ethnicity_concept_id
+
+# observation_period
+
+- [x] period_type_concept_id
+
+# visit_occurence
+
+- [x] visit_type_concept_id
+
+# Condition_occurence
+
+- [ ] condition_concept_id
+
+# durg_exposure
+
+- [ ] drug_concept_id
+- [x] drug_type_concept_id
+
+# procedure_occurence
+
+- [ ] procedure_concept_id
+
+# Measurement
+
+- [ ] measurment_concept_id
+- [x] measurment_type_concept_id
+
+# Death
+
+- [x]  death_type_concept_id
+
+? cause of death available ? 
+

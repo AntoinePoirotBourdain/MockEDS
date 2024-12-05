@@ -1,9 +1,23 @@
 import pandas as pd
 from pathlib import Path
+import numpy as np
 
 
+# difference entre table de réfe
 TABLE_GENERATORS = {
     "persons": lambda: generate_persons_table(),
+   # "observation_Periods": lambda: generate_observation_period_table(),
+    "death": lambda: generate_death_table(),
+    "visit_occurence": lambda: generate_visit_occurence_table(),
+    "condition_occurence": lambda: generate_condition_occurence_table(),
+    "procedure_occurence": lambda: generate_procedure_occurence_table(),
+   # "measurements: lambda": generate_measurement_table(),
+    #"CDM_sources": lambda: generate_CDM_source_table(),
+    #"locations": lambda: generate_Location_table(),
+    #"vocabularys": lambda: generate_Vocabulary_table(),
+    #"domains": lambda: generate_Domain_table(),
+    #"cohorts": lambda: generate_Cohort_table(),
+    #"cohort_definitions": lambda: generate_Cohort_definition_table(),
     # Add other table-specific generators here
 }
 
@@ -11,11 +25,10 @@ TABLE_GENERATORS = {
 ########################### Specific table generation ###############################################################
 
 
+# Person
 def generate_persons_table():
-
-    # Read all tables that are necessary to generate the persons table
+    # Read all tables that are necessary to generate the table
     PATIENTS = read_table("PATIENTS")
-
     # apply the different mappings to the columns
     person_table = pd.DataFrame({
         "person_id" : PATIENTS["subject_id"],
@@ -27,8 +40,109 @@ def generate_persons_table():
 
     return person_table
 
-# Tables to generate : 
-# 
+# Death
+def generate_death_table():
+    # Read all tables that are necessary to generate the table
+    PATIENTS = read_table("PATIENTS")
+
+    # death can be from 3 different sources 
+
+    dod_hosp = PATIENTS["dod_hosp"]
+    dod_ssn = PATIENTS["dod_ssn"]
+
+
+    death_date = dod_hosp.fillna(dod_ssn)
+    death_date = death_date.where(~death_date.isna(), None)
+
+    ehr_death__type_concept_id = dod_hosp.apply(lambda x: 32817 if pd.notnull(x) else None)
+    ssn_death_type_concept_id = dod_ssn.apply(lambda x: 32885 if pd.notnull(x) else None)
+
+    death_type_conept_id = ehr_death__type_concept_id.fillna(ssn_death_type_concept_id)
+
+
+    # apply the different mappings to the columns
+    death_table = pd.DataFrame({
+        "person_id" : PATIENTS["subject_id"],
+        "death_date": death_date,
+    })
+    return death_table
+
+
+# Visit_occurence
+def generate_visit_occurence_table():
+    # Read all tables that are necessary to generate the table
+    ADMISSIONS = read_table("ADMISSIONS")
+
+    # apply the different mappings to the columns
+    Visit_occurence_table = pd.DataFrame({
+        "visit_occurrence_id" : ADMISSIONS["hadm_id"],	
+        "person_id" : ADMISSIONS["subject_id"],
+        "visit_concept_id" : np.repeat("9203",ADMISSIONS.shape[0]), # all emergency room
+        #https://athena.ohdsi.org/search-terms/terms?domain=Visit&standardConcept=Standard&page=1&pageSize=15&query=emergency&boosts
+        "visit_start_date" : ADMISSIONS["admittime"],
+        "visit_end_date" : ADMISSIONS["dischtime"],
+        "visit_type_concept_id" : np.repeat("32817",ADMISSIONS.shape[0])
+    })
+    return Visit_occurence_table
+
+# Condition_occurence
+def generate_condition_occurence_table():
+    # Read all tables that are necessary to generate the table
+    CO = read_table("DEATH")
+
+    # apply the different mappings to the columns
+    Condition_occurence_table = pd.DataFrame({
+        "person_id" : PO["subject_id"],
+        "condition_occurrence_id" : "",
+        "condition_concept_id" : "",
+    })
+    return Condition_occurence_table
+
+# Procedure_occurence
+def generate_procedure_occurence_table():
+    # Read all tables that are necessary to generate the table
+    PO = read_table("PROCEDUREEVENTS_MV")
+
+    # apply the different mappings to the columns
+    Procedure_occurence_table = pd.DataFrame({
+        "person_id" : PO["subject_id"],
+        "procedure_date" : PO["starttime"],
+        "procedure_occurrence_id" : PO["icustay_id"],	
+        "procedure_concept_id" : "",
+        "procedure_type_concept_id" : "",
+        })
+    return Procedure_occurence_table
+
+# Measurement
+def generate_measurement_table():
+    # Read all tables that are necessary to generate the table
+    MM = read_table("LABEVENTS")
+
+    # apply the different mappings to the columns
+    Measurement_table = pd.DataFrame({
+        "measurement_id" : "integer",
+        "person_id" : MM["subject_id"],
+        #A foreign key identifier to the Person about whom the measurement was recorded. The demographic details of that Person are stored in the PERSON table.
+        "measurement_concept_id" : "integer",
+        #A foreign key to the standard measurement concept identifier in the Standardized Vocabularies.
+        "measurement_date" : "date",
+        #The date of the Measurement.
+        "measurement_type_concept_id" : "integer",
+        #A foreign key to the predefined Concept in the Standardized Vocabularies reflecting the provenance from where the Measurement record was recorded.
+        })
+    return Measurement_table
+
+
+
+# CDM_source
+def generate_cdm_source_table():
+    # apply the different mappings to the columns
+    cdm_source_table = pd.DataFrame({
+        "cdm_source_name" : ["MIMIC III"],
+        "cdm_etl_reference" : ["https://github.com/AntoinePoirotBourdain/MockEDS"]
+    })
+    	
+    return cdm_source_table
 
 
 ######################## Source code ####################################################################
@@ -94,6 +208,9 @@ def default_mapping(concept_target, n_rows):
     except Exception as e:
         print(f"An error occurred: {e}")
         return None
+
+
+
     
 
 

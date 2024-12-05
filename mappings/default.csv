@@ -1,3 +1,9 @@
 ﻿concept_target,conceptId,conceptName,class
 race_concept_id,3213232,Unknown racial group,Social Context
 ethnicity_concept_id,
+period_type_concept_id,32817,
+visit_type_concept_id,32817
+drug_type_concept_id, 38000175, 38000178 (ICU)
+death_type_concept_id, 32510 (EHR_patient_status_desease),Medical claim diagnostic code indicating death 
+death_type_concept_id, 32510 (EHR_patient_status_desease),32508, Medical claim diagnostic code indicating death 
+measurement_type_concept_id, 44818701 (laboratory measurement)

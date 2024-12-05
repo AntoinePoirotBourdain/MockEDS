@@ -25,7 +25,24 @@ def source_concepts_generation(concept_target,source_table_name, concept_source_
     return concept_table_for_usagi
 
 
-source_concepts_generation("diagnoses","DIAGNOSES_ICD","icd9_code","long_title", "D_ICD_DIAGNOSES")
+source_concepts_generation(concept_target = "diagnoses",
+                           source_table_name = "DIAGNOSES_ICD",
+                           concept_source_code = "icd9_code",
+                           concept_source_name = "long_title", 
+                           reference_table = "D_ICD_DIAGNOSES")
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
