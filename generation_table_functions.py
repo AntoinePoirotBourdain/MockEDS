@@ -133,7 +133,7 @@ def generate_condition_occurence_table():
     # apply the different mappings to the columns
     Condition_occurence_table = pd.DataFrame({
         "person_id" : DIAGNOSES_ICD["subject_id"],
-        "condition_occurrence_id" : DIAGNOSES_ICD["icd9_code"].map(mapping_dict), 
+        "condition_occurrence_id" : DIAGNOSES_ICD["hadm_id"], 
         "condition_start_date" : conditions_start_date,
         "condition_concept_id" : DIAGNOSES_ICD["icd9_code"].map(mapping_dict),
     })
@@ -145,14 +145,11 @@ def generate_measurement_table():
     concept_map = get_mapping_table()
 
 
-
-
-
-
     # apply the different mappings to the columns
     Measurement_table = pd.DataFrame({
         "measurement_id" : CHARTEVENTS["row_id"],
         "person_id" : CHARTEVENTS["subject_id"],
+        "visit_occurrence_id" : CHARTEVENTS["hadm_id"],
         "measurement_concept_id" : CHARTEVENTS["itemid"].map(concept_map),
         "measurement_date" : CHARTEVENTS["charttime"],
         "measurement_type_concept_id" : np.repeat(32817, CHARTEVENTS.shape[0]),  # Example concept ID
@@ -175,6 +172,7 @@ def generate_drug_exposure_table():
     drug_exposure_table = pd.DataFrame({
         "drug_exposure_id" : PRESCRIPTIONS["row_id"],
         "person_id" : PRESCRIPTIONS["subject_id"],
+        "visit_occurrence_id" : PRESCRIPTIONS["hadm_id"],
         "drug_concept_id" : PRESCRIPTIONS["ndc"].map(concept_map),
         "drug_exposure_start_date" : PRESCRIPTIONS["startdate"],
         "drug_exposure_end_date" : PRESCRIPTIONS["enddate"],
@@ -200,6 +198,7 @@ def generate_procedure_occurence_table():
     # apply the different mappings to the columns
     Procedure_occurence_table = pd.DataFrame({
         "person_id" : PROCEDURES_ICD["subject_id"],
+        "visit_occurrence_id" : PROCEDURES_ICD["hadm_id"],
         "procedure_occurrence_id" : PROCEDURES_ICD["row_id"],	
         "procedure_date" : admission_times,
         "procedure_concept_id" : PROCEDURES_ICD["icd9_code"].map(get_mapping_table()),
