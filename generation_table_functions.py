@@ -136,6 +136,7 @@ def generate_condition_occurence_table():
         "condition_occurrence_id" : DIAGNOSES_ICD["hadm_id"], 
         "condition_start_date" : conditions_start_date,
         "condition_concept_id" : apply_mapping(DIAGNOSES_ICD["icd9_code"]),
+        "visit_occurrence_id" : DIAGNOSES_ICD["hadm_id"].astype("str"),
     })
     return Condition_occurence_table
 
