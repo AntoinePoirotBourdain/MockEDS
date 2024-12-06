@@ -22,6 +22,7 @@ def generate_concept_map(concept_list):
 
 
     concept_map_total.to_csv(Path("concept_map/concept_map_total.csv"), index=False)
+    concept_map_total.to_csv(Path("OMOP_data/source_to_concept_map.csv"), index=False)
 
     return concept_map_total
 
