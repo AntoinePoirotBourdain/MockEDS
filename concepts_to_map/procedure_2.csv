@@ -1,0 +1,65 @@
+concept_code,concept_name,frequency
+221214,CT scan,37
+221216,X-ray,7
+221217,Ultrasound,14
+221223,EEG,10
+223253,Magnetic Resonance Imaging,6
+224263,Multi Lumen,34
+224264,PICC Line,13
+224267,Cordis/Introducer,6
+224270,Dialysis Catheter,2
+224273,Presep Catheter,1
+224274,22 Gauge,16
+224275,20 Gauge,82
+224276,16 Gauge,6
+224277,18 Gauge,70
+224385,Intubation,17
+224560,PA Catheter,1
+224566,14 Gauge,2
+225202,Indwelling Port (PortaCath),4
+225204,Midline,3
+225399,Lumbar Puncture,4
+225400,Bronchoscopy,10
+225401,Blood Cultured,38
+225402,EKG,35
+225428,Blakemore D/C,1
+225430,Cardiac Cath,2
+225432,Transthoracic Echo,12
+225433,Chest Tube Placed,1
+225434,Colonoscopy,1
+225436,CRRT Filter Change,1
+225439,Endoscopy,5
+225440,Fluoroscopy,2
+225441,Hemodialysis,2
+225443,Nuclear Medicine,1
+225444,Pan Culture,3
+225446,PEG Insertion,1
+225447,Percutaneous Drain Insertion,1
+225448,Percutaneous Tracheostomy,3
+225449,Pericardiocentesis,1
+225450,Radiation Therapy,1
+225451,Sputum Culture,17
+225454,Urine Culture,18
+225457,Abdominal X-Ray,4
+225459,Chest X-Ray,101
+225461,Pelvis,1
+225462,Interventional Radiology,2
+225465,Chest Pain,1
+225466,Cardiac Arrest,5
+225468,Unplanned Extubation (patient-initiated),2
+225469,OR Received,9
+225470,OR Sent,7
+225475,Respiratory Arrest,1
+225479,Thoracentesis,2
+225752,Arterial Line,30
+225789,Sheath,1
+225792,Invasive Ventilation,26
+225794,Non-invasive Ventilation,4
+225802,Dialysis - CRRT,16
+225814,Stool Culture,9
+225816,Wound Culture,3
+225966,Nasal Swab,12
+226476,Esophogeal Balloon,1
+227194,Extubation,23
+227550,ERCP,1
+228129,Family updated by RN,1

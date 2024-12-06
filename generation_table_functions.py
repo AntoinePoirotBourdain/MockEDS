@@ -45,7 +45,7 @@ def generate_persons_table():
 
     person_table = pd.DataFrame({
         "person_id" : PATIENTS["subject_id"],
-        "gender_concept_id" : PATIENTS["gender"].map(concept_map),
+        "gender_concept_id" : apply_mapping(PATIENTS["gender"]),
         "year_of_birth" : pd.to_datetime(PATIENTS["dob"]).dt.year,
         "race_concept_id" : PATIENTS.shape[0] * [None],
         "ethnicity_concept_id" : PATIENTS.shape[0] * [None]
@@ -103,7 +103,7 @@ def generate_visit_occurence_table():
 
     # apply the different mappings to the columns
     Visit_occurence_table = pd.DataFrame({
-        "visit_occurrence_id" : ADMISSIONS["hadm_id"],	
+        "visit_occurrence_id" : ADMISSIONS["hadm_id"].astype("str"),
         "person_id" : ADMISSIONS["subject_id"],
         "visit_concept_id" : np.repeat("9203",ADMISSIONS.shape[0]), # all emergency room
         #https://athena.ohdsi.org/search-terms/terms?domain=Visit&standardConcept=Standard&page=1&pageSize=15&query=emergency&boosts
@@ -123,7 +123,6 @@ def generate_condition_occurence_table():
 
 
     conditions_start_date = dates_from_hadm_id(DIAGNOSES_ICD["hadm_id"])
-    print(conditions_start_date)
 
     mapping_dict = get_mapping_table()
     #conditions_start_date.shape
@@ -135,7 +134,7 @@ def generate_condition_occurence_table():
         "person_id" : DIAGNOSES_ICD["subject_id"],
         "condition_occurrence_id" : DIAGNOSES_ICD["hadm_id"], 
         "condition_start_date" : conditions_start_date,
-        "condition_concept_id" : DIAGNOSES_ICD["icd9_code"].map(mapping_dict),
+        "condition_concept_id" : apply_mapping(DIAGNOSES_ICD["icd9_code"]),
     })
     return Condition_occurence_table
 
@@ -146,15 +145,34 @@ def generate_measurement_table():
 
 
     # apply the different mappings to the columns
-    Measurement_table = pd.DataFrame({
+    Measurement_table_1 = pd.DataFrame({
         "measurement_id" : CHARTEVENTS["row_id"],
         "person_id" : CHARTEVENTS["subject_id"],
-        "visit_occurrence_id" : CHARTEVENTS["hadm_id"],
-        "measurement_concept_id" : CHARTEVENTS["itemid"].map(concept_map),
+        "visit_occurrence_id" : CHARTEVENTS["hadm_id"].astype("str"),
+        "measurement_concept_id" : apply_mapping(CHARTEVENTS["itemid"]),
         "measurement_date" : CHARTEVENTS["charttime"],
         "measurement_type_concept_id" : np.repeat(32817, CHARTEVENTS.shape[0]),  # Example concept ID
         "value_as_number" : CHARTEVENTS["valuenum"],
         "unit_source_value" : CHARTEVENTS["valueuom"]})
+    
+    # get measurement table 2 from labevents
+
+    LABEVENTS = read_table("LABEVENTS")
+
+    measurement_table_2 = pd.DataFrame({
+        "measurement_id" : LABEVENTS["row_id"],
+        "person_id" : LABEVENTS["subject_id"],
+        "visit_occurrence_id" : LABEVENTS["hadm_id"].astype("str"),
+        "measurement_concept_id" : ["toto"]* LABEVENTS.shape[0],
+        "measurement_date" : LABEVENTS["charttime"],
+        "measurement_type_concept_id" : np.repeat(32817, LABEVENTS.shape[0]),  # Example concept ID
+        "value_as_number" : LABEVENTS["valuenum"],
+        "unit_source_value" : LABEVENTS["valueuom"]})
+    
+    Measurement_table = pd.concat([Measurement_table_1, measurement_table_2])
+
+
+
     
 
     return Measurement_table
@@ -167,13 +185,12 @@ def generate_drug_exposure_table():
     
     concept_map = get_mapping_table()
 
-    print(PRESCRIPTIONS["startdate"])
 
     drug_exposure_table = pd.DataFrame({
         "drug_exposure_id" : PRESCRIPTIONS["row_id"],
         "person_id" : PRESCRIPTIONS["subject_id"],
-        "visit_occurrence_id" : PRESCRIPTIONS["hadm_id"],
-        "drug_concept_id" : PRESCRIPTIONS["ndc"].map(concept_map),
+        "visit_occurrence_id" : PRESCRIPTIONS["hadm_id"].astype("str"),
+        "drug_concept_id" : apply_mapping(PRESCRIPTIONS["ndc"]),
         "drug_exposure_start_date" : PRESCRIPTIONS["startdate"],
         "drug_exposure_end_date" : PRESCRIPTIONS["enddate"],
         "drug_type_concept_id" : np.repeat(32817, PRESCRIPTIONS.shape[0]),  # Example concept ID
@@ -192,16 +209,15 @@ def generate_procedure_occurence_table():
 
     admission_times = dates_from_hadm_id(PROCEDURES_ICD["hadm_id"])
 
-    print("################")
 
 
     # apply the different mappings to the columns
     Procedure_occurence_table = pd.DataFrame({
         "person_id" : PROCEDURES_ICD["subject_id"],
-        "visit_occurrence_id" : PROCEDURES_ICD["hadm_id"],
+        "visit_occurrence_id" : PROCEDURES_ICD["hadm_id"].astype("str"),
         "procedure_occurrence_id" : PROCEDURES_ICD["row_id"],	
         "procedure_date" : admission_times,
-        "procedure_concept_id" : PROCEDURES_ICD["icd9_code"].map(get_mapping_table()),
+        "procedure_concept_id" : apply_mapping(PROCEDURES_ICD["icd9_code"]),
         "procedure_type_concept_id" : np.repeat(32817, PROCEDURES_ICD.shape[0]),  # Example concept ID
         })
     
@@ -245,6 +261,7 @@ def generate_table(table_name):
 def read_table(table_name):
     """Read a table from a CSV file dynamically."""
     file_path = DATA_PATH / f"{table_name}.csv"
+    
     try:
         if file_path.exists():
             return pd.read_csv(file_path)
@@ -261,33 +278,15 @@ def get_mapping_table():
 
 
     return mapping_dict
+
+
+def apply_mapping(serie_source):
     
-
-# def apply_mapping(serie_source):
-
-#     mapping_dict = get_mapping_table(concept_source)
-#     serie_target = serie_source.map(mapping_dict)
-        
-#     return serie_target
-
-#def default_mapping(concept_target, n_rows):
-#    
-#    try:
-#        default_mapping_table = pd.read_csv(Path("mappings/default.csv"))
-#
-#        default_mapping_concept = default_mapping_table[default_mapping_table["concept_target"] == concept_target]["conceptId"].values[0]
-#
-#        return [default_mapping_concept] * n_rows
-#    
-#    except FileNotFoundError:
-#        print(f"Error: File not found: mappings/default.csv")
-#        return None
-#    except IndexError:
-#        print(f"Error: Concept target '{concept_target}' not found in default mapping table")
-#        return None
-#    except Exception as e:
-#        print(f"An error occurred: {e}")
-#        return None
+        mapping_dict = get_mapping_table()
+        serie_target = serie_source.astype("str").map(mapping_dict).astype("str")
+            
+        return serie_target
+    
 
 
 

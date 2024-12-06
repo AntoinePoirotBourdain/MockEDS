@@ -49,29 +49,54 @@ source_concepts_generation(concept_target = "procedure_concept_icd",
 #                            reference_table = "D_ICD_PROCEDURES")
 
 
+
+print
+
+read_table = pd.read_csv(Path("MIMIC_data/D_ITEMS.csv"))
+
 # Drug
+print("Generating drug concepts...")
 source_concepts_generation(concept_target = "drug_concept",
                            source_table_name = "PRESCRIPTIONS",
                            concept_source_code = "ndc",
                            concept_source_name = "drug")
 
 # Measurement
+print("Generating measurement concepts...")
 source_concepts_generation(concept_target = "measurement_concept",
                            source_table_name = "CHARTEVENTS",
                            concept_source_code = "itemid",
                            concept_source_name = "label", 
                            reference_table_name = "D_ITEMS")
 
+print("Generating measurement concepts... 2")
+source_concepts_generation(concept_target = "measurement_concept_2",
+                           source_table_name = "LABEVENTS",
+                           concept_source_code = "itemid",
+                           concept_source_name = "label", 
+                           reference_table_name = "D_ITEMS")
+
+print("Generating drug concepts... 2")
+source_concepts_generation(concept_target = "drug_2",
+                           source_table_name = "INPUTEVENTS_MV",
+                           concept_source_code = "itemid",
+                           concept_source_name = "label", 
+                           reference_table_name = "D_ITEMS")
+
+print("Generating drug concepts... 3")
+source_concepts_generation(concept_target = "drug_3",
+                           source_table_name = "INPUTEVENTS_CV",
+                           concept_source_code = "itemid",
+                           concept_source_name = "label", 
+                           reference_table_name = "D_ITEMS")
 
 
-source_concepts_generation(concept_target = "measurement_unit_concept",
-                           source_table_name = "CHARTEVENTS",
-                           concept_source_code = "valueuom",
-                           concept_source_name = "row_id")
-
-
-
-
+print("Generating procedure concepts...2")
+source_concepts_generation(concept_target = "procedure_2",
+                           source_table_name = "PROCEDUREEVENTS_MV",
+                           concept_source_code = "itemid",
+                           concept_source_name = "label", 
+                           reference_table_name = "D_ITEMS")
 
 
 

@@ -1,0 +1,79 @@
+concept_code,concept_name,frequency
+30001,Packed RBC's,122
+30005,Fresh Frozen Plasma,118
+30006,Platelets,47
+30007,Cryoprecipitate,5
+30008,Albumin 5%,14
+30009,Albumin 25%,11
+30012,Hespan,3
+30013,D5W,4950
+30015,D5/.45NS,479
+30016,Dextrose 10%,4
+30018,.9% Normal Saline,6528
+30020,.45% Normal Saline,264
+30021,Lactated Ringers,473
+30023,Calcium Gluconate,185
+30025,Heparin,833
+30026,KCL,355
+30028,MVI,11
+30029,Potassium Phosphate,30
+30030,Sodium Bicarbonate,202
+30032,TPN,1277
+30033,Lipids,12
+30042,Dobutamine,19
+30043,Dopamine,729
+30045,Insulin,2484
+30049,Nitroglycerine,74
+30050,Nitroprusside,86
+30051,Vasopressin,270
+30054,Pre-Admission Intake,25
+30055,Cath Lab Intake,4
+30056,Po Intake,334
+30058,Free Water Bolus,40
+30059,GT Flush,71
+30060,D5NS,4
+30061,D5RL,28
+30065,Sterile Water,39
+30066,Carrier,20
+30069,Solumedrol,25
+30072,Peptamen,65
+30073,Impact w/fiber,196
+30077,Nepro,25
+30090,Tube Feeding,441
+30094,Other Blood Products,6
+30095,TF Residual,236
+30096,TPN w/Lipids,147
+30098,D5 Aminosyn 3.5%,11
+30101,OR Crystalloid,14
+30102,OR Colloid,4
+30103,OR FFP,8
+30104,OR Packed RBC's,8
+30105,OR Platelets,5
+30110,Aggrastat,51
+30112,Amiodarone,492
+30114,Cisatracurium,321
+30117,Esmolol,25
+30118,Fentanyl,1591
+30119,Epinephrine-k,4
+30120,Levophed-k,1920
+30121,Nitroglycerine-k,437
+30122,Labetolol,166
+30123,Lasix,559
+30124,Midazolam,1485
+30125,Milrinone,217
+30126,Morphine Sulfate,172
+30128,Neosynephrine-k,1271
+30130,Pentobarbitol,39
+30131,Propofol,2168
+30133,Sandostatin,333
+30141,Ativan,195
+30144,Gastric Meds,367
+30164,Criticare HN,20
+30165,Promote,20
+30166,Promote w/fiber,454
+30170,Ampho-B_GU,65
+30172,Natrecor,113
+30178,Nicardipine,27
+30383,Impact,38
+40864,KPhos,7
+44638,R LQ punch,10

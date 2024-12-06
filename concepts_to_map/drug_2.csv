@@ -1,0 +1,136 @@
+concept_code,concept_name,frequency
+220862,Albumin 25%,52
+220864,Albumin 5%,8
+220949,Dextrose 5%,1722
+220950,Dextrose 10%,2
+220952,Dextrose 50%,7
+220970,Fresh Frozen Plasma,35
+220995,Sodium Bicarbonate 8.4%,17
+221036,Nutren Renal (Full),9
+221347,Amiodarone,30
+221385,Lorazepam (Ativan),45
+221393,Atropine,3
+221429,Esmolol,53
+221456,Calcium Gluconate,33
+221468,Diltiazem,11
+221555,Cisatracurium,12
+221653,Dobutamine,14
+221662,Dopamine,80
+221668,Midazolam (Versed),265
+221744,Fentanyl,289
+221749,Phenylephrine,74
+221794,Furosemide (Lasix),199
+221824,Haloperidol (Haldol),14
+221828,Hydralazine,32
+221833,Hydromorphone (Dilaudid),20
+221906,Norepinephrine,380
+221986,Milrinone,23
+222011,Magnesium Sulfate,85
+222042,Nicardipine,6
+222056,Nitroglycerin,22
+222062,Vecuronium,2
+222168,Propofol,222
+222315,Vasopressin,17
+223257,Insulin - 70/30,14
+223258,Insulin - Regular,320
+223259,Insulin - NPH,28
+223260,Insulin - Glargine,16
+223262,Insulin - Humalog,90
+225152,Heparin Sodium,112
+225153,Labetalol,16
+225154,Morphine Sulfate,157
+225155,Octreotide,32
+225156,Pentobarbital,7
+225158,NaCl 0.9%,1609
+225159,NaCl 0.45%,9
+225161,NaCl 3% (Hypertonic Saline),2
+225166,Potassium Chloride,291
+225168,Packed Red Blood Cells,78
+225170,Platelets,30
+225171,Cryoprecipitate,1
+225174,Hetastarch (Hespan) 6%,4
+225797,Free Water,191
+225798,Vancomycin,198
+225799,Gastric Meds,614
+225823,D5 1/2NS,66
+225825,D5NS,13
+225828,LR,122
+225830,Multivitamins,5
+225832,Folic Acid,7
+225833,Thiamine,5
+225834,K Phos,25
+225835,Na Phos,17
+225837,Acyclovir,37
+225842,Ampicillin,36
+225843,Ampicillin/Sulbactam (Unasyn),4
+225845,Azithromycin,7
+225850,Cefazolin,6
+225851,Cefepime,66
+225853,Ceftazidime,8
+225855,Ceftriaxone,27
+225859,Ciprofloxacin,74
+225860,Clindamycin,7
+225863,Daptomycin,3
+225865,Doxycycline,21
+225869,Fluconazole,11
+225879,Levofloxacin,5
+225881,Linezolid,3
+225883,Meropenem,119
+225884,Metronidazole,77
+225888,Nafcillin,7
+225892,Piperacillin,29
+225893,Piperacillin/Tazobactam (Zosyn),124
+225899,Bactrim (SMX/TMP),5
+225902,Tobramycin,9
+225906,Enoxaparin (Lovenox),13
+225907,Famotidine (Pepcid),97
+225909,Lansoprazole (Prevacid),15
+225910,Pantoprazole (Protonix),97
+225911,Ranitidine (Prophylaxis),6
+225912,Carafate (Sucralfate),7
+225913,Coumadin (Warfarin),2
+225916,TPN w/ Lipids,3
+225917,TPN without Lipids,15
+225928,Impact with Fiber (Full),32
+225931,Nutren 2.0 (Full),56
+225934,Vivonex (Full),14
+225936,Replete with Fiber (Full),404
+225937,Ensure (Full),7
+225941,D5 1/4NS,1
+225942,Fentanyl (Concentrate),131
+225943,Solution,492
+225944,Sterile Water,523
+225970,Beneprotein,83
+225973,Meperidine (Demerol),1
+225974,Metoprolol,93
+225975,Heparin Sodium (Prophylaxis),201
+226050,Replete with Fiber (3/4),23
+226089,Piggyback,185
+226361,Pre-Admission Intake,33
+226363,Cath Lab Intake,4
+226364,OR Crystalloid Intake,10
+226365,OR Colloid Intake,1
+226367,OR FFP Intake,2
+226368,OR Packed RBC Intake,1
+226372,OR Cell Saver Intake,1
+226375,PACU Crystalloid Intake,1
+226452,PO Intake,252
+226453,GT Flush,420
+226880,Nutren Pulmonary (Full),17
+227522,KCL (Bolus),120
+227523,Magnesium Sulfate (Bolus),60
+227525,Calcium Gluconate (CRRT),149
+227526,Citrate,222
+227529,ACD-A Citrate (1000ml),222
+227531,Mannitol,2
+227533,Sodium Bicarbonate 8.4% (Amp),2
+227535,Vitamin K (Phytonadione),1
+227536,KCl (CRRT),495
+227690,Fosphenytoin,13
+227691,Keflex,1
+227694,Omeprazole (Prilosec),2
+227695,Fibersource HN (Full),59
+227975,NovaSource Renal (Full),38
+227979,Boost Glucose Control (Full),44
+228315,Acetaminophen-IV,1
+228359,Glucerna (Full),3
