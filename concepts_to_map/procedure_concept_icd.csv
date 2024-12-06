@@ -1,0 +1,169 @@
+concept_code,concept_name,frequency
+12,Administration of inhaled nitric oxide,1
+13,Injection or infusion of nesiritide,1
+14,Injection or infusion of oxazolidinone class of antibiotics,2
+17,Infusion of vasopressor agent,4
+40,Procedure on single vessel,2
+41,Procedure on two vessels,2
+45,Cranial or peripheral nerve graft,2
+45,Insertion of one vascular stent,2
+46,Insertion of two vascular stents,1
+46,Transposition of cranial and peripheral nerves,1
+47,Insertion of three vascular stents,1
+66,Excision of lingual thyroid,2
+66,Percutaneous transluminal coronary angioplasty [PTCA],2
+93,Other operations on lacrimal gland,1
+93,Transplant from cadaver,1
+118,Other diagnostic procedures on brain and cerebral meninges,2
+131,Incision of cerebral meninges,2
+151,Excision of lesion or tissue of cerebral meninges,1
+159,Other excision or destruction of lesion or tissue of brain,1
+159,Other operations on extraocular muscles and tendons,1
+243,Removal of ventricular shunt,1
+311,Temporary tracheostomy,4
+331,Incision of lung,5
+331,Spinal tap,5
+353,Repair of vertebral fracture,1
+370,Pericardiocentesis,2
+387,Interruption of the vena cava,2
+392,Injection of other agent into spinal canal,1
+403,Division or crushing of other cranial and peripheral nerves,1
+403,Regional lymph node excision,1
+852,Blepharorrhaphy,1
+966,Enteral infusion of concentrated nutritional substances,32
+3129,Other permanent tracheostomy,1
+3142,Laryngoscopy and other tracheoscopy,1
+3322,Fiber-optic bronchoscopy,3
+3323,Other bronchoscopy,2
+3324,Closed [endoscopic] biopsy of bronchus,10
+3329,Other diagnostic procedures on lung or bronchus,1
+3391,Bronchial dilation,1
+3404,Insertion of intercostal catheter for drainage,4
+3406,Thoracoscopic drainage of pleural cavity,2
+3422,Mediastinoscopy,1
+3491,Thoracentesis,6
+3492,Injection into thoracic cavity,1
+3523,Open and other replacement of mitral valve with tissue graft,1
+3606,Insertion of non-drug-eluting coronary artery stent(s),2
+3607,Insertion of drug-eluting coronary artery stent(s),1
+3612,(Aorto)coronary bypass of two coronary arteries,3
+3615,Single internal mammary-coronary artery bypass,2
+3712,Pericardiotomy,2
+3721,Right heart cardiac catheterization,1
+3722,Left heart cardiac catheterization,1
+3723,Combined right and left heart cardiac catheterization,7
+3726,Catheter based invasive electrophysiologic testing,1
+3761,Implant of pulsation balloon,1
+3771,Initial insertion of transvenous lead [electrode] into ventricle,1
+3772,Initial insertion of transvenous leads [electrodes] into atrium and ventricle,2
+3781,"Initial insertion of single-chamber device, not specified as rate responsive",1
+3783,Initial insertion of dual-chamber device,2
+3818,"Endarterectomy, lower limb arteries",1
+3891,Arterial catheterization,10
+3893,"Venous catheterization, not elsewhere classified",56
+3895,Venous catheterization for renal dialysis,5
+3897,Central venous catheter placement with guidance,3
+3932,Suture of vein,2
+3942,Revision of arteriovenous shunt for renal dialysis,1
+3949,Other revision of vascular procedure,1
+3950,Angioplasty of other non-coronary vessel(s),3
+3961,Extracorporeal circulation auxiliary to open heart surgery,3
+3974,Endovascular removal of obstruction from head and neck vessel(s),1
+3979,Other endovascular procedures on other vessels,1
+3990,Insertion of non-drug-eluting peripheral (non-coronary) vessel stent(s),3
+3995,Hemodialysis,9
+4011,Biopsy of lymphatic structure,1
+4131,Biopsy of bone marrow,2
+4223,Other esophagoscopy,1
+4233,Endoscopic excision or destruction of lesion or tissue of esophagus,3
+4252,Intrathoracic esophagogastrostomy,1
+4311,Percutaneous [endoscopic] gastrostomy [PEG],3
+4319,Other gastrostomy,1
+4399,Other total gastrectomy,3
+4432,Percutaneous [endoscopic] gastrojejunostomy,1
+4439,Other gastroenterostomy without gastrectomy,1
+4443,Endoscopic control of gastric or duodenal bleeding,1
+4513,Other endoscopy of small intestine,6
+4516,Esophagogastroduodenoscopy [EGD] with closed biopsy,2
+4524,Flexible sigmoidoscopy,1
+4525,Closed [endoscopic] biopsy of large intestine,1
+4542,Endoscopic polypectomy of large intestine,1
+4582,Open total intra-abdominal colectomy,1
+4613,Permanent colostomy,1
+4623,Other permanent ileostomy,3
+4639,Other enterostomy,1
+4674,"Closure of fistula of small intestine, except duodenum",1
+4685,Dilation of intestine,1
+4823,Rigid proctosigmoidoscopy,1
+5011,Closed (percutaneous) [needle] biopsy of liver,2
+5012,Open biopsy of liver,1
+5059,Other transplant of liver,1
+5061,Closure of laceration of liver,1
+5110,Endoscopic retrograde cholangiopancreatography [ERCP],2
+5122,Cholecystectomy,1
+5151,Exploration of common duct,1
+5187,Endoscopic insertion of stent (tube) into bile duct,1
+5198,Other percutaneous procedures on biliary tract,1
+5412,Reopening of recent laparotomy site,2
+5491,Percutaneous abdominal drainage,12
+5551,Nephroureterectomy,1
+5732,Other cystoscopy,1
+5795,Replacement of indwelling urinary catheter,1
+7815,"Application of external fixator device, femur",1
+7865,"Removal of implanted devices from bone, femur",1
+7869,"Removal of implanted devices from bone, other bones",1
+7905,"Closed reduction of fracture without internal fixation, femur",1
+7931,"Open reduction of fracture with internal fixation, humerus",1
+7935,"Open reduction of fracture with internal fixation, femur",2
+8101,Atlas-axis spinal fusion,1
+8103,"Other cervical fusion of the posterior column, posterior technique",1
+8151,Total hip replacement,1
+8162,Fusion or refusion of 2-3 vertebrae,1
+8181,Partial shoulder replacement,1
+8191,Arthrocentesis,2
+8314,Fasciotomy,1
+8345,Other myectomy,2
+8605,Incision with removal of foreign body or device from skin and subcutaneous tissue,1
+8607,Insertion of totally implantable vascular access device [VAD],1
+8659,Closure of skin and subcutaneous tissue of other sites,2
+8721,Contrast myelogram,1
+8753,Intraoperative cholangiogram,1
+8754,Other cholangiogram,1
+8841,Arteriography of cerebral arteries,2
+8843,Arteriography of pulmonary arteries,1
+8847,Arteriography of other intra-abdominal arteries,2
+8848,Arteriography of femoral and other lower extremity arteries,1
+8849,Arteriography of other specified sites,1
+8852,Angiocardiography of right heart structures,2
+8853,Angiocardiography of left heart structures,1
+8856,Coronary arteriography using two catheters,8
+8872,Diagnostic ultrasound of heart,5
+8914,Electroencephalogram,2
+8960,Continuous intra-arterial blood gas monitoring,1
+8964,Pulmonary artery wedge monitoring,2
+9229,Other radiotherapeutic procedure,3
+9344,Other skeletal traction,1
+9390,Non-invasive mechanical ventilation,4
+9462,Alcohol detoxification,1
+9604,Insertion of endotracheal tube,22
+9605,Other intubation of respiratory tract,4
+9626,Manual reduction of rectal prolapse,1
+9656,Other lavage of bronchus and trachea,1
+9671,Continuous invasive mechanical ventilation for less than 96 consecutive hours,21
+9672,Continuous invasive mechanical ventilation for 96 consecutive hours or more,19
+9702,Replacement of gastrostomy tube,2
+9705,Replacement of stent (tube) in biliary or pancreatic duct,1
+9723,Replacement of tracheostomy tube,1
+9749,Removal of other device from thorax,1
+9904,Transfusion of packed cells,30
+9905,Transfusion of platelets,5
+9907,Transfusion of other serum,6
+9909,Transfusion of other substance,1
+9910,Injection or infusion of thrombolytic agent,1
+9915,Parenteral infusion of concentrated nutritional substances,14
+9920,Injection or infusion of platelet inhibitor,3
+9921,Injection of antibiotic,1
+9925,Injection or infusion of cancer chemotherapeutic substance,1
+9929,Injection or infusion of other therapeutic or prophylactic substance,2
+9960,"Cardiopulmonary resuscitation, not otherwise specified",1
+9962,Other electric countershock of heart,3

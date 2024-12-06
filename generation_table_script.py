@@ -1,6 +1,6 @@
 import pandas as pd
 from pathlib import Path
-from generation_table_functions import generate_table
+from generation_table_functions import generate_table, generate_empty_tables
 
 
 
@@ -9,7 +9,13 @@ from generation_table_functions import generate_table
 table_name_list = [
     "persons",
     "death",
-    "visit_occurence"
+    "visit_occurence",
+    "condition_occurence",
+    "measurements",
+    "drug_exposure",
+    "procedure_occurence",
+    "cdm_source",
+    "observation_period"
     ]
 
 
@@ -25,6 +31,6 @@ for table_name in table_name_list:
     table_df.to_csv(f"OMOP_data/{table_name}.csv", index=False)
     
 
-
+generate_empty_tables()
 
 

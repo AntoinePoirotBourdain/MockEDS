@@ -29,6 +29,7 @@
 
 - [ ] measurment_concept_id
 - [x] measurment_type_concept_id
+- [ ] measurment_unit_concept_id
 
 # Death
 
