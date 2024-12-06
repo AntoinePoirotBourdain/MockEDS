@@ -1,136 +1,136 @@
-concept_code,concept_name,frequency
-220862,Albumin 25%,52
-220864,Albumin 5%,8
-220949,Dextrose 5%,1722
-220950,Dextrose 10%,2
-220952,Dextrose 50%,7
-220970,Fresh Frozen Plasma,35
-220995,Sodium Bicarbonate 8.4%,17
-221036,Nutren Renal (Full),9
-221347,Amiodarone,30
-221385,Lorazepam (Ativan),45
-221393,Atropine,3
-221429,Esmolol,53
-221456,Calcium Gluconate,33
-221468,Diltiazem,11
-221555,Cisatracurium,12
-221653,Dobutamine,14
-221662,Dopamine,80
-221668,Midazolam (Versed),265
-221744,Fentanyl,289
-221749,Phenylephrine,74
-221794,Furosemide (Lasix),199
-221824,Haloperidol (Haldol),14
-221828,Hydralazine,32
-221833,Hydromorphone (Dilaudid),20
-221906,Norepinephrine,380
-221986,Milrinone,23
-222011,Magnesium Sulfate,85
-222042,Nicardipine,6
-222056,Nitroglycerin,22
-222062,Vecuronium,2
-222168,Propofol,222
-222315,Vasopressin,17
-223257,Insulin - 70/30,14
-223258,Insulin - Regular,320
-223259,Insulin - NPH,28
-223260,Insulin - Glargine,16
-223262,Insulin - Humalog,90
-225152,Heparin Sodium,112
-225153,Labetalol,16
-225154,Morphine Sulfate,157
-225155,Octreotide,32
-225156,Pentobarbital,7
-225158,NaCl 0.9%,1609
-225159,NaCl 0.45%,9
-225161,NaCl 3% (Hypertonic Saline),2
-225166,Potassium Chloride,291
-225168,Packed Red Blood Cells,78
-225170,Platelets,30
-225171,Cryoprecipitate,1
-225174,Hetastarch (Hespan) 6%,4
-225797,Free Water,191
-225798,Vancomycin,198
-225799,Gastric Meds,614
-225823,D5 1/2NS,66
-225825,D5NS,13
-225828,LR,122
-225830,Multivitamins,5
-225832,Folic Acid,7
-225833,Thiamine,5
-225834,K Phos,25
-225835,Na Phos,17
-225837,Acyclovir,37
-225842,Ampicillin,36
-225843,Ampicillin/Sulbactam (Unasyn),4
-225845,Azithromycin,7
-225850,Cefazolin,6
-225851,Cefepime,66
-225853,Ceftazidime,8
-225855,Ceftriaxone,27
-225859,Ciprofloxacin,74
-225860,Clindamycin,7
-225863,Daptomycin,3
-225865,Doxycycline,21
-225869,Fluconazole,11
-225879,Levofloxacin,5
-225881,Linezolid,3
-225883,Meropenem,119
-225884,Metronidazole,77
-225888,Nafcillin,7
-225892,Piperacillin,29
-225893,Piperacillin/Tazobactam (Zosyn),124
-225899,Bactrim (SMX/TMP),5
-225902,Tobramycin,9
-225906,Enoxaparin (Lovenox),13
-225907,Famotidine (Pepcid),97
-225909,Lansoprazole (Prevacid),15
-225910,Pantoprazole (Protonix),97
-225911,Ranitidine (Prophylaxis),6
-225912,Carafate (Sucralfate),7
-225913,Coumadin (Warfarin),2
-225916,TPN w/ Lipids,3
-225917,TPN without Lipids,15
-225928,Impact with Fiber (Full),32
-225931,Nutren 2.0 (Full),56
-225934,Vivonex (Full),14
-225936,Replete with Fiber (Full),404
-225937,Ensure (Full),7
-225941,D5 1/4NS,1
-225942,Fentanyl (Concentrate),131
-225943,Solution,492
-225944,Sterile Water,523
-225970,Beneprotein,83
-225973,Meperidine (Demerol),1
-225974,Metoprolol,93
-225975,Heparin Sodium (Prophylaxis),201
-226050,Replete with Fiber (3/4),23
-226089,Piggyback,185
-226361,Pre-Admission Intake,33
-226363,Cath Lab Intake,4
-226364,OR Crystalloid Intake,10
-226365,OR Colloid Intake,1
-226367,OR FFP Intake,2
-226368,OR Packed RBC Intake,1
-226372,OR Cell Saver Intake,1
-226375,PACU Crystalloid Intake,1
-226452,PO Intake,252
-226453,GT Flush,420
-226880,Nutren Pulmonary (Full),17
-227522,KCL (Bolus),120
-227523,Magnesium Sulfate (Bolus),60
-227525,Calcium Gluconate (CRRT),149
-227526,Citrate,222
-227529,ACD-A Citrate (1000ml),222
-227531,Mannitol,2
-227533,Sodium Bicarbonate 8.4% (Amp),2
-227535,Vitamin K (Phytonadione),1
-227536,KCl (CRRT),495
-227690,Fosphenytoin,13
-227691,Keflex,1
-227694,Omeprazole (Prilosec),2
-227695,Fibersource HN (Full),59
-227975,NovaSource Renal (Full),38
-227979,Boost Glucose Control (Full),44
-228315,Acetaminophen-IV,1
-228359,Glucerna (Full),3
+source_code,source_concept_id,source_vocabulary_id,source_code_description,target_concept_id,target_vocabulary_id,valid_start_date,valid_end_date,invalid_reason
+225825,0,item,D5NS,42609304,RxNorm,1970-01-01,2099-12-31,
+225863,0,item,Daptomycin,1786617,RxNorm,1970-01-01,2099-12-31,
+225835,0,item,Na Phos,939871,RxNorm,1970-01-01,2099-12-31,
+221393,0,item,Atropine,914335,RxNorm,1970-01-01,2099-12-31,
+221794,0,item,Furosemide (Lasix),40040345,RxNorm,1970-01-01,2099-12-31,
+225916,0,item,TPN w/ Lipids,45776598,RxNorm,1970-01-01,2099-12-31,
+225884,0,item,Metronidazole,1707164,RxNorm,1970-01-01,2099-12-31,
+225934,0,item,Vivonex (Full),19019206,RxNorm,1970-01-01,2099-12-31,
+226367,0,item,OR FFP Intake,44814363,RxNorm,1970-01-01,2099-12-31,
+225828,0,item,LR,1368671,RxNorm,1970-01-01,2099-12-31,
+225159,0,item,NaCl 0.45%,779670,RxNorm,1970-01-01,2099-12-31,
+225907,0,item,Famotidine (Pepcid),40036969,RxNorm,1970-01-01,2099-12-31,
+225928,0,item,Impact with Fiber (Full),911891,RxNorm,1970-01-01,2099-12-31,
+225910,0,item,Pantoprazole (Protonix),19099650,RxNorm,1970-01-01,2099-12-31,
+225912,0,item,Carafate (Sucralfate),40080155,RxNorm,1970-01-01,2099-12-31,
+225937,0,item,Ensure (Full),19019206,RxNorm,1970-01-01,2099-12-31,
+225865,0,item,Doxycycline,1738521,RxNorm,1970-01-01,2099-12-31,
+221429,0,item,Esmolol,19063575,RxNorm,1970-01-01,2099-12-31,
+225837,0,item,Acyclovir,1703687,RxNorm,1970-01-01,2099-12-31,
+227529,0,item,ACD-A Citrate (1000ml),40220860,RxNorm,1970-01-01,2099-12-31,
+225888,0,item,Nafcillin,1713930,RxNorm,1970-01-01,2099-12-31,
+221824,0,item,Haloperidol (Haldol),40046618,RxNorm,1970-01-01,2099-12-31,
+225913,0,item,Coumadin (Warfarin),40093133,RxNorm,1970-01-01,2099-12-31,
+225941,0,item,D5 1/4NS,746206,RxNorm,1970-01-01,2099-12-31,
+225917,0,item,TPN without Lipids,19057932,RxNorm,1970-01-01,2099-12-31,
+225869,0,item,Fluconazole,1754994,RxNorm,1970-01-01,2099-12-31,
+225936,0,item,Replete with Fiber (Full),911891,RxNorm,1970-01-01,2099-12-31,
+225830,0,item,Multivitamins,19008339,RxNorm,1970-01-01,2099-12-31,
+221347,0,item,Amiodarone,1309944,RxNorm,1970-01-01,2099-12-31,
+225833,0,item,Thiamine,19137312,RxNorm,1970-01-01,2099-12-31,
+225931,0,item,Nutren 2.0 (Full),42903077,RxNorm,1970-01-01,2099-12-31,
+225881,0,item,Linezolid,1736887,RxNorm,1970-01-01,2099-12-31,
+225909,0,item,Lansoprazole (Prevacid),19120974,RxNorm,1970-01-01,2099-12-31,
+227531,0,item,Mannitol,994058,RxNorm,1970-01-01,2099-12-31,
+225911,0,item,Ranitidine (Prophylaxis),961047,RxNorm,1970-01-01,2099-12-31,
+226368,0,item,OR Packed RBC Intake,19129961,RxNorm,1970-01-01,2099-12-31,
+221828,0,item,Hydralazine,1373928,RxNorm,1970-01-01,2099-12-31,
+225943,0,item,Solution,40098364,RxNorm,1970-01-01,2099-12-31,
+225832,0,item,Folic Acid,19111620,RxNorm,1970-01-01,2099-12-31,
+225834,0,item,K Phos,19096891,RxNorm,1970-01-01,2099-12-31,
+225879,0,item,Levofloxacin,1742253,RxNorm,1970-01-01,2099-12-31,
+225859,0,item,Ciprofloxacin,1797513,RxNorm,1970-01-01,2099-12-31,
+222056,0,item,Nitroglycerin,1361711,RxNorm,1970-01-01,2099-12-31,
+225161,0,item,NaCl 3% (Hypertonic Saline),42708330,RxNorm,1970-01-01,2099-12-31,
+225883,0,item,Meropenem,1709170,RxNorm,1970-01-01,2099-12-31,
+222315,0,item,Vasopressin,1507835,RxNorm,1970-01-01,2099-12-31,
+221385,0,item,Lorazepam (Ativan),40000864,RxNorm,1970-01-01,2099-12-31,
+225942,0,item,Fentanyl (Concentrate),1154029,RxNorm,1970-01-01,2099-12-31,
+220952,0,item,Dextrose 50%,19076324,RxNorm,1970-01-01,2099-12-31,
+227533,0,item,Sodium Bicarbonate 8.4% (Amp),939506,RxNorm,1970-01-01,2099-12-31,
+222011,0,item,Magnesium Sulfate,19093848,RxNorm,1970-01-01,2099-12-31,
+225845,0,item,Azithromycin,1734104,RxNorm,1970-01-01,2099-12-31,
+225860,0,item,Clindamycin,997881,RxNorm,1970-01-01,2099-12-31,
+222062,0,item,Vecuronium,19012598,RxNorm,1970-01-01,2099-12-31,
+225944,0,item,Sterile Water,19010309,RxNorm,1970-01-01,2099-12-31,
+225799,0,item,Gastric Meds,19112537,RxNorm,1970-01-01,2099-12-31,
+226364,0,item,OR Crystalloid Intake,19030125,RxNorm,1970-01-01,2099-12-31,
+221833,0,item,Hydromorphone (Dilaudid),40051251,RxNorm,1970-01-01,2099-12-31,
+225156,0,item,Pentobarbital,730729,RxNorm,1970-01-01,2099-12-31,
+225899,0,item,Bactrim (SMX/TMP),19026199,RxNorm,1970-01-01,2099-12-31,
+221555,0,item,Cisatracurium,19015726,RxNorm,1970-01-01,2099-12-31,
+225853,0,item,Ceftazidime,1776684,RxNorm,1970-01-01,2099-12-31,
+223257,0,item,Insulin - 70/30,1596976,RxNorm,1970-01-01,2099-12-31,
+225850,0,item,Cefazolin,1771162,RxNorm,1970-01-01,2099-12-31,
+225152,0,item,Heparin Sodium,43011598,RxNorm,1970-01-01,2099-12-31,
+221744,0,item,Fentanyl,1154029,RxNorm,1970-01-01,2099-12-31,
+222042,0,item,Nicardipine,1318137,RxNorm,1970-01-01,2099-12-31,
+220970,0,item,Fresh Frozen Plasma,19025693,RxNorm,1970-01-01,2099-12-31,
+225892,0,item,Piperacillin,1746114,RxNorm,1970-01-01,2099-12-31,
+225823,0,item,D5 1/2NS,44785522,RxNorm,1970-01-01,2099-12-31,
+227535,0,item,Vitamin K (Phytonadione),19044727,RxNorm,1970-01-01,2099-12-31,
+227695,0,item,Fibersource HN (Full),911891,RxNorm,1970-01-01,2099-12-31,
+225855,0,item,Ceftriaxone,1777806,RxNorm,1970-01-01,2099-12-31,
+225902,0,item,Tobramycin,902722,RxNorm,1970-01-01,2099-12-31,
+221653,0,item,Dobutamine,1337720,RxNorm,1970-01-01,2099-12-31,
+225851,0,item,Cefepime,1748975,RxNorm,1970-01-01,2099-12-31,
+222168,0,item,Propofol,753626,RxNorm,1970-01-01,2099-12-31,
+225158,0,item,NaCl 0.9%,40241104,RxNorm,1970-01-01,2099-12-31,
+225170,0,item,Platelets,1201284,RxNorm,1970-01-01,2099-12-31,
+226365,0,item,OR Colloid Intake,19058374,RxNorm,1970-01-01,2099-12-31,
+221749,0,item,Phenylephrine,1135766,RxNorm,1970-01-01,2099-12-31,
+221906,0,item,Norepinephrine,1321341,RxNorm,1970-01-01,2099-12-31,
+225153,0,item,Labetalol,1386957,RxNorm,1970-01-01,2099-12-31,
+221662,0,item,Dopamine,1337860,RxNorm,1970-01-01,2099-12-31,
+225842,0,item,Ampicillin,1717327,RxNorm,1970-01-01,2099-12-31,
+227691,0,item,Keflex,1786682,RxNorm,1970-01-01,2099-12-31,
+220995,0,item,Sodium Bicarbonate 8.4%,939506,RxNorm,1970-01-01,2099-12-31,
+225797,0,item,Free Water,19010309,RxNorm,1970-01-01,2099-12-31,
+227525,0,item,Calcium Gluconate (CRRT),19037038,RxNorm,1970-01-01,2099-12-31,
+221986,0,item,Milrinone,1368671,RxNorm,1970-01-01,2099-12-31,
+225906,0,item,Enoxaparin (Lovenox),1301025,RxNorm,1970-01-01,2099-12-31,
+226452,0,item,PO Intake,46221661,RxNorm,1970-01-01,2099-12-31,
+225893,0,item,Piperacillin/Tazobactam (Zosyn),46275429,RxNorm,1970-01-01,2099-12-31,
+221456,0,item,Calcium Gluconate,19037038,RxNorm,1970-01-01,2099-12-31,
+225171,0,item,Cryoprecipitate,19097016,RxNorm,1970-01-01,2099-12-31,
+227975,0,item,NovaSource Renal (Full),1718536,RxNorm,1970-01-01,2099-12-31,
+225166,0,item,Potassium Chloride,19049105,RxNorm,1970-01-01,2099-12-31,
+225154,0,item,Morphine Sulfate,40169889,RxNorm,1970-01-01,2099-12-31,
+226050,0,item,Replete with Fiber (3/4),911891,RxNorm,1970-01-01,2099-12-31,
+221668,0,item,Midazolam (Versed),40146985,RxNorm,1970-01-01,2099-12-31,
+227526,0,item,Citrate,19011034,RxNorm,1970-01-01,2099-12-31,
+225798,0,item,Vancomycin,1707687,RxNorm,1970-01-01,2099-12-31,
+226453,0,item,GT Flush,42800867,RxNorm,1970-01-01,2099-12-31,
+225843,0,item,Ampicillin/Sulbactam (Unasyn),46275618,RxNorm,1970-01-01,2099-12-31,
+227694,0,item,Omeprazole (Prilosec),19045786,RxNorm,1970-01-01,2099-12-31,
+220949,0,item,Dextrose 5%,19076324,RxNorm,1970-01-01,2099-12-31,
+221468,0,item,Diltiazem,1328165,RxNorm,1970-01-01,2099-12-31,
+221036,0,item,Nutren Renal (Full),19019206,RxNorm,1970-01-01,2099-12-31,
+225155,0,item,Octreotide,1522957,RxNorm,1970-01-01,2099-12-31,
+223260,0,item,Insulin - Glargine,1502905,RxNorm,1970-01-01,2099-12-31,
+225174,0,item,Hetastarch (Hespan) 6%,42628902,RxNorm,1970-01-01,2099-12-31,
+223258,0,item,Insulin - Regular,1586346,RxNorm,1970-01-01,2099-12-31,
+226089,0,item,Piggyback,37002370,RxNorm,1970-01-01,2099-12-31,
+228315,0,item,Acetaminophen-IV,1125315,RxNorm,1970-01-01,2099-12-31,
+227522,0,item,KCL (Bolus),19061980,RxNorm,1970-01-01,2099-12-31,
+225168,0,item,Packed Red Blood Cells,42900172,RxNorm,1970-01-01,2099-12-31,
+225974,0,item,Metoprolol,1307046,RxNorm,1970-01-01,2099-12-31,
+220862,0,item,Albumin 25%,42903893,RxNorm,1970-01-01,2099-12-31,
+220950,0,item,Dextrose 10%,19076324,RxNorm,1970-01-01,2099-12-31,
+226361,0,item,Pre-Admission Intake,43012196,RxNorm,1970-01-01,2099-12-31,
+225970,0,item,Beneprotein,44785045,RxNorm,1970-01-01,2099-12-31,
+227536,0,item,KCl (CRRT),19061980,RxNorm,1970-01-01,2099-12-31,
+226880,0,item,Nutren Pulmonary (Full),42904130,RxNorm,1970-01-01,2099-12-31,
+226372,0,item,OR Cell Saver Intake,19080251,RxNorm,1970-01-01,2099-12-31,
+223259,0,item,Insulin - NPH,40051375,RxNorm,1970-01-01,2099-12-31,
+223262,0,item,Insulin - Humalog,1513849,RxNorm,1970-01-01,2099-12-31,
+228359,0,item,Glucerna (Full),19057354,RxNorm,1970-01-01,2099-12-31,
+227979,0,item,Boost Glucose Control (Full),1560524,RxNorm,1970-01-01,2099-12-31,
+227523,0,item,Magnesium Sulfate (Bolus),19093848,RxNorm,1970-01-01,2099-12-31,
+220864,0,item,Albumin 5%,42903893,RxNorm,1970-01-01,2099-12-31,
+226363,0,item,Cath Lab Intake,46221661,RxNorm,1970-01-01,2099-12-31,
+227690,0,item,Fosphenytoin,713192,RxNorm,1970-01-01,2099-12-31,
+225975,0,item,Heparin Sodium (Prophylaxis),40136202,RxNorm,1970-01-01,2099-12-31,
+225973,0,item,Meperidine (Demerol),40165029,RxNorm,1970-01-01,2099-12-31,
+226375,0,item,PACU Crystalloid Intake,19030125,RxNorm,1970-01-01,2099-12-31,

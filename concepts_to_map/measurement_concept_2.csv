@@ -1,1 +1,440 @@
 concept_code,concept_name,frequency
+50800,SPECIMEN TYPE,1222
+50801,Alveolar-arterial Gradient,64
+50802,Base Excess,1166
+50803,"Calculated Bicarbonate, Whole Blood",18
+50804,Calculated Total CO2,1166
+50805,Carboxyhemoglobin,5
+50806,"Chloride, Whole Blood",87
+50808,Free Calcium,558
+50809,Glucose,283
+50810,"Hematocrit, Calculated",126
+50811,Hemoglobin,126
+50812,Intubated,487
+50813,Lactate,578
+50814,Methemoglobin,5
+50815,O2 Flow,44
+50816,Oxygen,338
+50817,Oxygen Saturation,343
+50818,pCO2,1166
+50819,PEEP,267
+50820,pH,1230
+50821,pO2,1166
+50822,"Potassium, Whole Blood",256
+50823,Required O2,64
+50824,"Sodium, Whole Blood",107
+50825,Temperature,439
+50826,Tidal Volume,229
+50827,Ventilation Rate,268
+50828,Ventilator,140
+50831,pH,2
+50835,"Albumin, Ascites",11
+50836,"Amylase, Ascites",4
+50838,"Bilirubin, Total, Ascites",5
+50841,"Creatinine, Ascites",5
+50842,"Glucose, Ascites",6
+50843,"Lactate Dehydrogenase, Ascites",7
+50849,"Total Protein, Ascites",9
+50852,% Hemoglobin A1c,23
+50853,25-OH Vitamin D,1
+50854,Absolute A1c,4
+50855,Absolute Hemoglobin,4
+50856,Acetaminophen,25
+50857,Acetone,2
+50861,Alanine Aminotransferase (ALT),609
+50862,Albumin,414
+50863,Alkaline Phosphatase,592
+50864,Alpha-Fetoprotein,7
+50866,Ammonia,23
+50867,Amylase,128
+50868,Anion Gap,2134
+50871,Anti-Mitochondrial Antibody,2
+50873,Anti-Nuclear Antibody,3
+50874,"Anti-Nuclear Antibody, Titer",2
+50876,Anti-Smooth Muscle Antibody,1
+50878,Asparate Aminotransferase (AST),603
+50879,Barbiturate Screen,26
+50880,Benzodiazepine Screen,26
+50881,Beta-2 Microglobulin,2
+50882,Bicarbonate,2151
+50883,"Bilirubin, Direct",60
+50884,"Bilirubin, Indirect",54
+50885,"Bilirubin, Total",629
+50887,Blue Top Hold,64
+50889,C-Reactive Protein,3
+50890,C3,1
+50891,C4,1
+50892,CA-125,1
+50893,"Calcium, Total",1757
+50895,Calculated TBG,3
+50896,Calculated Thyroxine (T4) Index,3
+50898,Cancer Antigen 27.29,9
+50899,Carbamazepine,1
+50900,Carcinoembyronic Antigen (CEA),18
+50902,Chloride,2160
+50903,Cholesterol Ratio (Total/HDL),24
+50904,"Cholesterol, HDL",24
+50905,"Cholesterol, LDL, Calculated",24
+50907,"Cholesterol, Total",25
+50908,CK-MB Index,46
+50909,Cortisol,64
+50910,Creatine Kinase (CK),334
+50911,"Creatine Kinase, MB Isoenzyme",319
+50912,Creatinine,2175
+50915,D-Dimer,5
+50917,Digoxin,18
+50919,EDTA Hold,19
+50920,Estimated GFR (MDRD equation),207
+50922,Ethanol,28
+50924,Ferritin,50
+50925,Folate,33
+50926,Follicle Stimulating Hormone,5
+50927,Gamma Glutamyltransferase,6
+50929,Gentamicin,6
+50930,Globulin,13
+50931,Glucose,2121
+50932,Gray Top Hold (plasma),1
+50933,Green Top Hold (plasma),69
+50935,Haptoglobin,41
+50937,Hepatitis A Virus Antibody,3
+50939,"Hepatitis B Core Antibody, IgM",3
+50940,Hepatitis B Surface Antibody,23
+50941,Hepatitis B Surface Antigen,21
+50942,Hepatitis B Virus Core Antibody,7
+50943,Hepatitis C Virus Antibody,7
+50944,HIV Antibody,1
+50946,Human Chorionic Gonadotropin,1
+50948,Immunofixation,7
+50949,Immunoglobulin A,9
+50950,Immunoglobulin G,23
+50951,Immunoglobulin M,9
+50952,Iron,50
+50953,"Iron Binding Capacity, Total",49
+50954,Lactate Dehydrogenase (LD),423
+50955,Light Green Top Hold,33
+50956,Lipase,146
+50958,Luteinizing Hormone,5
+50960,Magnesium,1918
+50961,Methotrexate,36
+50963,NTproBNP,31
+50964,"Osmolality, Measured",47
+50965,Parathyroid Hormone,12
+50966,Phenobarbital,31
+50967,Phenytoin,58
+50968,"Phenytoin, Free",9
+50969,"Phenytoin, Percent Free",8
+50970,Phosphate,1748
+50971,Potassium,2279
+50973,Prolactin,6
+50974,Prostate Specific Antigen,10
+50975,Protein Electrophoresis,11
+50976,"Protein, Total",29
+50978,Rapamycin,2
+50979,Red Top Hold,82
+50981,Salicylate,24
+50983,Sodium,2185
+50986,tacroFK,52
+50988,Testosterone,2
+50993,Thyroid Stimulating Hormone,73
+50994,Thyroxine (T4),11
+50995,"Thyroxine (T4), Free",22
+50997,Tobramycin,6
+50998,Transferrin,49
+50999,Tricyclic Antidepressant Screen,24
+51000,Triglycerides,37
+51001,Triiodothyronine (T3),10
+51002,Troponin I,14
+51003,Troponin T,288
+51005,Uptake Ratio,3
+51006,Urea Nitrogen,2158
+51007,Uric Acid,158
+51008,Valproic Acid,15
+51009,Vancomycin,176
+51010,Vitamin B12,38
+51014,"Glucose, CSF",11
+51015,"Lactate Dehydrogenase, CSF",2
+51017,"PEP, CSF",2
+51018,"Total Protein, CSF",11
+51025,"Albumin, Body Fluid",2
+51026,"Amylase, Body Fluid",3
+51028,"Bilirubin, Total, Body Fluid",1
+51030,"Chloride, Body Fluid",1
+51032,"Creatinine, Body Fluid",1
+51034,"Glucose, Body Fluid",2
+51035,"LD, Body Fluid",2
+51041,"Potassium, Body Fluid",1
+51042,"Sodium, Body Fluid",1
+51043,"Total Protein, Body Fluid",2
+51044,Triglycer,1
+51046,"Albumin, Pleural",3
+51047,"Amylase, Pleural",4
+51049,"Bilirubin, Total, Pleural",2
+51052,"Creatinine, Pleural",1
+51053,"Glucose, Pleural",7
+51054,"Lactate Dehydrogenase, Pleural",8
+51059,"Total Protein, Pleural",8
+51060,"Triglycerides, Pleural",3
+51069,"Albumin, Urine",3
+51070,"Albumin/Creatinine, Urine",3
+51071,"Amphetamine Screen, Urine",19
+51072,"Amylase, Urine",1
+51073,"Amylase/Creatinine Ratio, Urine",1
+51074,"Barbiturate Screen, Urine",19
+51075,"Benzodiazepine Screen, Urine",19
+51076,"Bicarbonate, Urine",4
+51078,"Chloride, Urine",25
+51079,"Cocaine, Urine",19
+51082,"Creatinine, Urine",97
+51086,"Immunofixation, Urine",4
+51087,Length of Urine Collection,162
+51090,"Methadone, Urine",19
+51091,"Myoglobin, Urine",1
+51092,"Opiate Screen, Urine",19
+51093,"Osmolality, Urine",67
+51094,pH,5
+51095,"Phosphate, Urine",1
+51096,Porphobilinogen Screen,1
+51097,"Potassium, Urine",26
+51098,"Prot. Electrophoresis, Urine",8
+51099,Protein/Creatinine Ratio,12
+51100,"Sodium, Urine",92
+51102,"Total Protein, Urine",17
+51103,Uhold,8
+51104,"Urea Nitrogen, Urine",44
+51105,"Uric Acid, Urine",1
+51108,Urine Volume,5
+51114,Eosinophils,5
+51116,Lymphocytes,19
+51117,Macrophage,13
+51118,Mesothelial Cell,13
+51120,Monocytes,19
+51122,Nucleated RBC,2
+51124,Plasma,1
+51125,Polys,19
+51127,"RBC, Ascites",19
+51128,"WBC, Ascites",19
+51130,Absolute CD3 Count,1
+51131,Absolute CD4 Count,1
+51132,Absolute CD8 Count,1
+51133,Absolute Lymphocyte Count,1
+51134,Acanthocytes,7
+51136,Alpha Antiplasmin,1
+51137,Anisocytosis,215
+51143,Atypical Lymphocytes,176
+51144,Bands,231
+51145,Basophilic Stippling,20
+51146,Basophils,547
+51147,Bite Cells,4
+51148,Blasts,10
+51150,Blood Parasite Smear,1
+51151,Burr Cells,31
+51152,CD10,3
+51154,CD117,2
+51155,CD11c,2
+51156,CD13,3
+51158,CD14,2
+51159,CD15,2
+51164,CD19,3
+51167,CD2,2
+51168,CD20,3
+51176,"CD3 Cells, Percent",3
+51177,CD33,2
+51178,CD34,3
+51180,"CD4 Cells, Percent",3
+51181,CD4/CD8 Ratio,1
+51182,CD41,2
+51183,CD45,3
+51184,CD5,3
+51188,CD56,2
+51191,CD64,2
+51192,CD7,2
+51193,CD71,2
+51194,"CD8 Cells, Percent",3
+51196,D-Dimer,26
+51197,Elliptocytes,9
+51198,Envelope Cells,2
+51199,Eosinophil Count,1
+51200,Eosinophils,547
+51204,Factor V,1
+51206,Factor VIII,2
+51211,Factor XIII,1
+51213,Fibrin Degradation Products,21
+51214,"Fibrinogen, Functional",130
+51216,Fragmented Cells,9
+51217,Glyco A,2
+51218,Granulocyte Count,99
+51219,H/O Smear,4
+51221,Hematocrit,2317
+51222,Hemoglobin,2024
+51229,"Heparin, LMW",4
+51230,HLA-DR,2
+51232,Hypersegmented Neutrophils,1
+51233,Hypochromia,216
+51234,Immunophenotyping,2
+51235,Inhibitor Screen,1
+51236,Inpatient Hematology/Oncology Smear,7
+51237,INR(PT),1378
+51238,Kappa,3
+51239,Lambda,3
+51240,Large Platelets,23
+51243,Lupus Anticoagulant,2
+51244,Lymphocytes,547
+51245,"Lymphocytes, Percent",1
+51246,Macrocytes,213
+51247,MacroOvalocytes,1
+51248,MCH,2007
+51249,MCHC,2008
+51250,MCV,2007
+51251,Metamyelocytes,176
+51252,Microcytes,201
+51254,Monocytes,547
+51255,Myelocytes,176
+51256,Neutrophils,547
+51257,Nucleated Red Cells,33
+51259,Other Cells,6
+51260,Ovalocytes,80
+51262,Pencil Cells,2
+51263,Plasma Cells,4
+51264,Platelet Clumps,1
+51265,Platelet Count,2088
+51266,Platelet Smear,172
+51267,Poikilocytosis,191
+51268,Polychromasia,174
+51269,Promyelocytes,9
+51274,PT,1378
+51275,PTT,1419
+51276,Quantitative G6PD,1
+51277,RDW,2005
+51278,Red Blood Cell Fragments,7
+51279,Red Blood Cells,2007
+51283,"Reticulocyte Count, Automated",37
+51284,"Reticulocyte Count, Manual",2
+51287,Schistocytes,51
+51288,Sedimentation Rate,3
+51289,Serum Viscosity,1
+51290,Sickle Cell Preparation,1
+51292,Spherocytes,26
+51294,Target Cells,22
+51296,Teardrop Cells,42
+51297,Thrombin,3
+51298,Von Willebrand Factor Activity,2
+51299,Von Willebrand Factor Antigen,2
+51300,WBC Count,1
+51301,White Blood Cells,2021
+51302,Young Cells,2
+51303,CD10,2
+51305,CD117,1
+51306,CD11c,1
+51307,CD13,1
+51309,CD14,1
+51310,CD15,1
+51313,CD19,2
+51314,CD2,2
+51315,CD20,1
+51317,CD23,1
+51319,CD3,2
+51320,CD33,1
+51321,CD34,1
+51323,CD4,1
+51324,CD41,1
+51325,CD45,2
+51326,CD5,2
+51328,CD56,1
+51331,CD64,1
+51332,CD7,2
+51333,CD71,1
+51334,CD8,1
+51335,FMC-7,1
+51336,Glyco A,1
+51337,HLA-DR,2
+51338,Immunophenotyping,2
+51339,Iron Stain,1
+51340,Kappa,2
+51341,Lambda,2
+51342,Wright Giemsa,4
+51347,Eosinophils,2
+51351,Lymphs,12
+51352,Macrophage,2
+51355,Monocytes,12
+51358,Other,2
+51360,Polys,12
+51362,"RBC, CSF",12
+51363,"WBC, CSF",12
+51369,"Hematocrit, Joint Fluid",1
+51373,"Joint Crystals, Number",1
+51375,Lymphocytes,2
+51376,Macrophage,1
+51379,Monocytes,2
+51382,Polys,2
+51383,"RBC, Joint Fluid",1
+51384,"WBC, Joint Fluid",2
+51385,Atypical Lymphocytes,1
+51388,CD10,3
+51398,CD19,3
+51399,CD2,1
+51400,CD20,3
+51402,CD23,1
+51404,CD3,1
+51411,CD45,3
+51412,CD5,1
+51416,CD7,1
+51419,Eosinophils,3
+51420,FMC-7,1
+51422,"Hematocrit, Other Fluid",2
+51423,HLA-DR,1
+51424,Immunophenotyping,4
+51425,Kappa,3
+51426,Lambda,3
+51427,Lymphocytes,10
+51428,Macrophage,5
+51429,Mesothelial cells,2
+51431,Monos,10
+51434,Other Cell,3
+51436,Polys,10
+51438,"RBC, Other Fluid",9
+51439,"WBC, Other Fluid",10
+51444,Eosinophils,3
+51446,Lymphocytes,11
+51447,Macrophages,6
+51448,Mesothelial Cells,7
+51450,Monos,11
+51453,Other,2
+51455,Polys,11
+51457,"RBC, Pleural",11
+51458,"WBC, Pleural",11
+51460,"Blood, Occult",1
+51462,Amorphous Crystals,27
+51463,Bacteria,218
+51464,Bilirubin,284
+51466,Blood,284
+51469,Calcium Oxalate Crystals,2
+51474,Eosinophils,14
+51476,Epithelial Cells,233
+51478,Glucose,285
+51479,Granular Casts,15
+51482,Hyaline Casts,43
+51484,Ketone,286
+51486,Leukocytes,281
+51487,Nitrite,284
+51489,NonSquamous Epithelial Cell,1
+51491,pH,300
+51492,Protein,297
+51493,RBC,233
+51497,Renal Epithelial Cells,5
+51498,Specific Gravity,300
+51501,Transitional Epithelial Cells,11
+51505,Uric Acid Crystals,6
+51506,Urine Appearance,285
+51507,"Urine Casts, Other",1
+51508,Urine Color,285
+51512,Urine Mucous,61
+51513,Urine Specimen Type,2
+51514,Urobilinogen,284
+51516,WBC,227
+51517,WBC Casts,1
+51518,WBC Clumps,2
+51519,Yeast,233
+51523,GR HOLD,37
+51529,Estimated Actual Glucose,2
+51533,WBCP,1
+51537,TDT,1

@@ -6,12 +6,13 @@ from pathlib import Path
 def source_concepts_generation(concept_target,source_table_name, concept_source_code, concept_source_name,reference_table_name=None ):
 
     source_table = pd.read_csv(Path("MIMIC_data/" + source_table_name + ".csv"))
-    
+
+ 
 
     if reference_table_name:
         reference_table = pd.read_csv(Path("MIMIC_data/" + reference_table_name + ".csv"))
         source_table = pd.merge(source_table, reference_table, on=concept_source_code, how="left")
-        #source_table = source_table.rename(columns={"concept_id":concept_source_name})
+
 
 
     concept_table_for_usagi = source_table[[concept_source_code,concept_source_name]].groupby([concept_source_code,concept_source_name])
@@ -27,7 +28,7 @@ def source_concepts_generation(concept_target,source_table_name, concept_source_
 
 
 
-# Conditions
+#Conditions
 source_concepts_generation(concept_target = "condition_concept",
                            source_table_name = "DIAGNOSES_ICD",
                            concept_source_code = "icd9_code",
@@ -42,15 +43,8 @@ source_concepts_generation(concept_target = "procedure_concept_icd",
                            concept_source_name = "long_title", 
                            reference_table_name = "D_ICD_PROCEDURES")
 
-# source_concepts_generation(concept_target = "procedure_concept_cpt",
-#                            source_table_name = "D_CPT",
-#                            concept_source_code = "icd9_code",
-#                            concept_source_name = "long_title", 
-#                            reference_table = "D_ICD_PROCEDURES")
 
 
-
-print
 
 read_table = pd.read_csv(Path("MIMIC_data/D_ITEMS.csv"))
 
@@ -74,7 +68,7 @@ source_concepts_generation(concept_target = "measurement_concept_2",
                            source_table_name = "LABEVENTS",
                            concept_source_code = "itemid",
                            concept_source_name = "label", 
-                           reference_table_name = "D_ITEMS")
+                           reference_table_name = "D_LABITEMS")
 
 print("Generating drug concepts... 2")
 source_concepts_generation(concept_target = "drug_2",

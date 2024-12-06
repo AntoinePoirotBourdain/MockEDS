@@ -23,6 +23,7 @@ TABLE_GENERATORS = {
 }
 
 
+
 # def generate_concept_map(concept_list):
 
 #     concept_map_total = pd.read_csv(Path("concept_map/" + concept_list[0] + ".csv"))
@@ -194,8 +195,45 @@ def generate_drug_exposure_table():
         "drug_exposure_start_date" : PRESCRIPTIONS["startdate"],
         "drug_exposure_end_date" : PRESCRIPTIONS["enddate"],
         "drug_type_concept_id" : np.repeat(32817, PRESCRIPTIONS.shape[0]),  # Example concept ID
-        "quantity" : PRESCRIPTIONS["dose_val_rx"]
+        "quantity" : PRESCRIPTIONS["dose_val_rx"],
+        "amount" : [None] * PRESCRIPTIONS.shape[0],
+        "amountnum" : [None] * PRESCRIPTIONS.shape[0]
     })
+
+    # add the drug exposure table from inputevents_mv
+    INPUTEVENTS_MV = read_table("INPUTEVENTS_MV")
+
+    drug_exposure_table_2 = pd.DataFrame({
+        "drug_exposure_id" : INPUTEVENTS_MV["row_id"],
+        "person_id" : INPUTEVENTS_MV["subject_id"],
+        "visit_occurrence_id" : INPUTEVENTS_MV["hadm_id"].astype("str"),
+        "drug_concept_id" : apply_mapping(INPUTEVENTS_MV["itemid"]),
+        "drug_exposure_start_date" : INPUTEVENTS_MV["starttime"],
+        "drug_exposure_end_date" : INPUTEVENTS_MV["endtime"],
+        "drug_type_concept_id" : np.repeat(32817, INPUTEVENTS_MV.shape[0]),  # Example concept ID
+        "quantity" : INPUTEVENTS_MV["amount"],
+        "amount" : INPUTEVENTS_MV["amountuom"],
+        "amountnum" : INPUTEVENTS_MV["amount"]
+    })
+
+    # add the drug exposure table from inputevents_cv
+
+    INPUTEVENTS_CV = read_table("INPUTEVENTS_CV")
+
+    drug_exposure_table_3 = pd.DataFrame({
+        "drug_exposure_id" : INPUTEVENTS_CV["row_id"],
+        "person_id" : INPUTEVENTS_CV["subject_id"],
+        "visit_occurrence_id" : INPUTEVENTS_CV["hadm_id"].astype("str"),
+        "drug_concept_id" : apply_mapping(INPUTEVENTS_CV["itemid"]),
+        "drug_exposure_start_date" : INPUTEVENTS_CV["charttime"],
+        "drug_exposure_end_date" : INPUTEVENTS_CV["charttime"],
+        "drug_type_concept_id" : np.repeat(32817, INPUTEVENTS_CV.shape[0]),  # Example concept ID
+        "quantity" : INPUTEVENTS_CV["amount"],
+        "amount" : INPUTEVENTS_CV["amountuom"],
+        "amountnum" : INPUTEVENTS_CV["amount"]
+    })
+
+    drug_exposure_table = pd.concat([drug_exposure_table, drug_exposure_table_2, drug_exposure_table_3])
 
     return drug_exposure_table
 
@@ -220,6 +258,21 @@ def generate_procedure_occurence_table():
         "procedure_concept_id" : apply_mapping(PROCEDURES_ICD["icd9_code"]),
         "procedure_type_concept_id" : np.repeat(32817, PROCEDURES_ICD.shape[0]),  # Example concept ID
         })
+    
+    # add the procedure table from procedureevents_mv
+
+    PROCEDUREEVENTS_MV = read_table("PROCEDUREEVENTS_MV")
+
+    procedure_occurence_table_2 = pd.DataFrame({
+        "person_id" : PROCEDUREEVENTS_MV["subject_id"],
+        "visit_occurrence_id" : PROCEDUREEVENTS_MV["hadm_id"].astype("str"),
+        "procedure_occurrence_id" : PROCEDUREEVENTS_MV["row_id"],	
+        "procedure_date" : PROCEDUREEVENTS_MV["starttime"],
+        "procedure_concept_id" : apply_mapping(PROCEDUREEVENTS_MV["itemid"].astype("str")),
+        "procedure_type_concept_id" : np.repeat(32817, PROCEDUREEVENTS_MV.shape[0]),  # Example concept ID
+        })
+    
+    Procedure_occurence_table = pd.concat([Procedure_occurence_table, procedure_occurence_table_2])
     
     return Procedure_occurence_table
 
